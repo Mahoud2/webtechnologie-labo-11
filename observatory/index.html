@@ -6,8 +6,8 @@
 
     <title>Observatorium Zenit</title>
 
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./startbestanden/css/normalize.css" />
+    <link rel="stylesheet" href="./startbestanden/css/style.css" />
   </head>
 
   <body>
@@ -225,13 +225,186 @@
 
       <section id="programme">
         <h2>Programma</h2>
+
+        <div class="table-wrapper">
+          <table>
+            <caption>
+              Publieksavonden maart 2026. Reserveren is nodig, betalen doe je
+              ter plaatse.
+            </caption>
+
+            <thead>
+              <tr>
+                <th scope="col">Datum</th>
+                <th scope="col">Start</th>
+                <th scope="col">Activiteit</th>
+                <th scope="col">Prijs</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <th scope="row">do 5 maart</th>
+                <td>20.00</td>
+                <td>Maankijken met de refractor</td>
+                <td>&euro;&nbsp;6</td>
+              </tr>
+
+              <tr>
+                <th scope="row">vr 13 maart</th>
+                <td>20.30</td>
+                <td>Saturnus en zijn manen</td>
+                <td>&euro;&nbsp;6</td>
+              </tr>
+
+              <tr>
+                <th scope="row">za 21 maart</th>
+                <td>14.00</td>
+                <td>Zonnewaarnemen met H-alfafilter</td>
+                <td>&euro;&nbsp;4</td>
+              </tr>
+
+              <tr>
+                <th scope="row">do 26 maart</th>
+                <td>20.30</td>
+                <td>Lezing: hoe meet je een lichtjaar?</td>
+                <td>gratis</td>
+              </tr>
+
+              <tr>
+                <th scope="row">vr 27 maart</th>
+                <td>21.00</td>
+                <td>Deep sky voor beginners</td>
+                <td>&euro;&nbsp;8</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
 
       <section id="contact">
-        <h2>Contact</h2>
+        <article>
+          <h2>Reserveer je plaats</h2>
+
+          <form action="#" method="get">
+            <fieldset>
+              <legend>Jouw gegevens</legend>
+
+              <div class="field">
+                <label for="name">Naam</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+
+              <div class="field">
+                <label for="email">E-mailadres</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Jouw bezoek</legend>
+
+              <div class="field">
+                <label for="date">Datum</label>
+                <input type="date" id="date" name="date" required />
+              </div>
+
+              <div class="field">
+                <label for="persons">Aantal personen</label>
+                <input
+                  type="number"
+                  id="persons"
+                  name="persons"
+                  min="1"
+                  max="8"
+                  value="2"
+                  required
+                />
+              </div>
+
+              <div class="field">
+                <label for="message">Vraag of opmerking</label>
+                <textarea id="message" name="message" rows="5"></textarea>
+              </div>
+            </fieldset>
+
+            <button type="submit">Verstuur aanvraag</button>
+          </form>
+        </article>
+
+        <aside aria-labelledby="contact-title">
+          <h2 id="contact-title">Contact</h2>
+
+          <address>
+            <p>Observatorium Zenit</p>
+            <p>Sterrenkundelaan 12</p>
+            <p>2000 Antwerpen</p>
+
+            <p>
+              <a href="tel:+3235551234"> 03 555 12 34 </a>
+            </p>
+
+            <p>
+              <a href="mailto:info@observatoriumzenit.be">
+                info@observatoriumzenit.be
+              </a>
+            </p>
+          </address>
+
+          <ul class="social-links">
+            <li>
+              <a href="https://www.facebook.com/">
+                <img
+                  src="./startbestanden/assets/icon-facebook.svg"
+                  alt="Facebook"
+                />
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/">
+                <img
+                  src="./startbestanden/assets/icon-instagram.svg"
+                  alt="Instagram"
+                />
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.youtube.com/">
+                <img
+                  src="./startbestanden/assets/icon-youtube.svg"
+                  alt="YouTube"
+                />
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.linkedin.com/">
+                <img
+                  src="./startbestanden/assets/icon-linkedin.svg"
+                  alt="LinkedIn"
+                />
+              </a>
+            </li>
+          </ul>
+        </aside>
       </section>
     </main>
 
-    <footer></footer>
+    <footer>
+      <p>&copy; 2026 Observatorium Zenit. Alle rechten voorbehouden.</p>
+
+      <nav aria-label="Footernavigatie">
+        <ul>
+          <li>
+            <a href="#hero">Naar boven</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
   </body>
 </html>
