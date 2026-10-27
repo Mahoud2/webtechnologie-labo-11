@@ -12,33 +12,215 @@
 
   <body>
     <header>
-      <nav>
-        <nav>
-          <img src="./startbestanden/assets/logo.svg" alt="Logo Zenit" />
-        </nav>
-        <a href="#hero">Observatorium Zenit</a>
+      <a href="index.html" class="logo">
+        <img src="./startbestanden/assets/logo.svg" alt="" />
+        <span>Observatorium Zenit</span>
+      </a>
 
+      <nav aria-label="Hoofdnavigatie">
         <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#discover">Ontdek</a></li>
-          <li><a href="#objects">Hemelobjecten</a></li>
-          <li><a href="#programme">Programma</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="#discover">Ontdek</a>
+          </li>
+          <li>
+            <a href="#objects">Objecten</a>
+          </li>
+          <li>
+            <a href="#programme">Programma</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
         </ul>
       </nav>
+
+      <a href="#contact" class="reserve-button"> Reserveer </a>
     </header>
 
-    <main>
-      <section id="hero">
-        <h1>Observatorium Zenit</h1>
-      </section>
+    <section id="hero">
+      <h1>Kijk mee naar de nachtelijke hemel</h1>
 
+      <p>Ontdek de wonderen van het heelal bij Observatorium Zenit.</p>
+
+      <a href="#discover" class="hero-link"> Ontdek wat er te zien is </a>
+    </section>
+
+    <main>
       <section id="discover">
-        <h2>Ontdek</h2>
+        <article>
+          <h2>Ontdek het heelal</h2>
+
+          <p>
+            Bij Observatorium Zenit ontdek je de wonderen van het heelal.
+            Bewonder
+            <a href="#objects">de Maan</a>, ontdek de ringen van
+            <a href="#objects">Saturnus</a>
+            en verken
+            <a href="#objects">de Orionnevel</a>.
+          </p>
+
+          <p>
+            Kom langs bij onze sterrenwacht in Antwerpen en beleef de
+            sterrenhemel van dichtbij. Iedereen is welkom, van beginners tot
+            ervaren sterrenkijkers.
+          </p>
+        </article>
+
+        <aside aria-labelledby="openingstijden">
+          <h2 id="openingstijden">Openingsuren</h2>
+
+          <ul>
+            <li>
+              <span>Maandag</span>
+              <span>Gesloten</span>
+            </li>
+
+            <li>
+              <span>Woensdag</span>
+              <span>19.00 &ndash; 22.00</span>
+            </li>
+
+            <li>
+              <span>Vrijdag</span>
+              <span>19.00 &ndash; 23.00</span>
+            </li>
+
+            <li>
+              <span>Zaterdag</span>
+              <span>14.00 &ndash; 23.00</span>
+            </li>
+          </ul>
+
+          <p>
+            Wil je ons bezoeken?
+            <a href="#contact">Reserveer je plaats</a>.
+          </p>
+        </aside>
       </section>
 
       <section id="objects">
-        <h2>Hemelobjecten</h2>
+        <h2>Objecten</h2>
+
+        <ul>
+          <li>
+            <a href="#contact">
+              <figure>
+                <img
+                  src="./startbestanden/assets/object-moon.svg"
+                  alt="Het maanoppervlak met kraters"
+                  width="800"
+                  height="600"
+                />
+                <figcaption>
+                  <h3>De Maan</h3>
+                  <p>
+                    Kijk vlak naast de schaduwlijn, daar staan de kraters op hun
+                    scherpst.
+                  </p>
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+
+          <li>
+            <a href="#contact">
+              <figure>
+                <img
+                  src="./startbestanden/assets/object-saturn.svg"
+                  alt="Saturnus met zijn ringen"
+                  width="800"
+                  height="600"
+                />
+                <figcaption>
+                  <h3>Saturnus</h3>
+                  <p>
+                    De ring staat dit jaar bijna op zijn kant, een zeldzaam
+                    gezicht.
+                  </p>
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+
+          <li>
+            <a href="#contact">
+              <figure>
+                <img
+                  src="./startbestanden/assets/object-orion.svg"
+                  alt="De Orionnevel in de ruimte"
+                  width="800"
+                  height="600"
+                />
+                <figcaption>
+                  <h3>De Orionnevel</h3>
+                  <p>
+                    Een stervormingsgebied op 1 344 lichtjaar, zichtbaar als
+                    vage vlek.
+                  </p>
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+
+          <li>
+            <a href="#contact">
+              <figure>
+                <img
+                  src="./startbestanden/assets/object-milky-way.svg"
+                  alt="De Melkweg aan de sterrenhemel"
+                  width="800"
+                  height="600"
+                />
+                <figcaption>
+                  <h3>De Melkweg</h3>
+                  <p>
+                    Vanuit de stad nauwelijks te zien, op onze kampavonden wel.
+                  </p>
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+
+          <li>
+            <a href="#contact">
+              <figure>
+                <img
+                  src="./startbestanden/assets/object-eclipse.svg"
+                  alt="Een zonsverduistering"
+                  width="800"
+                  height="600"
+                />
+                <figcaption>
+                  <h3>Zonsverduistering</h3>
+                  <p>
+                    Op 12 augustus 2026 schuift de maan voor de zon, wij
+                    filteren mee.
+                  </p>
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+
+          <li>
+            <a href="#contact">
+              <figure>
+                <img
+                  src="./startbestanden/assets/object-comet.svg"
+                  alt="Een komeet met een lange staart"
+                  width="800"
+                  height="600"
+                />
+                <figcaption>
+                  <h3>Kometen</h3>
+                  <p>
+                    De staart wijst altijd van de zon weg, niet achter de komeet
+                    aan.
+                  </p>
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+        </ul>
       </section>
 
       <section id="programme">
